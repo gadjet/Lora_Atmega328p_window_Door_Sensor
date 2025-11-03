@@ -7,6 +7,8 @@ The design uses the reed switch wakeup circuit from the earlier ESP-NOW ESP8266 
 Much the same as the WiFi based sensor this board is used to detect the status of a window or door but instead of WiFi this sensor uses 868Mhz (915MHz in other countries) to transmit the data over a much greater distance than the WiFi version.
 
 There is also an ISP connector to allow the bootloader to be flashed into the chip but in this first version there was an error on my PCB and one of the connections was left off from the ISP connector and it requires a wire to be added to the PCB to allow flashing of the bootloader (see image).
+![PCB MOD](https://github.com/gadjet/Lora_Atmega328p_window_Door_Sensor/blob/main/image.png?raw=true)
 
+I also use the ISP connector to load the sketches as the serial port is connected to the WIO-E5 and seems to not work when loading the sketch via an FTDI.
 
-
+I will be fixing these issues in the next version of the PCB.
